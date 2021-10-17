@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 $buttonBackground: #e6a859;
 $titleColor: #534847;
-@mixin flex {
+@mixin flex() {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,15 @@ $titleColor: #534847;
     color: #e2b84c;
     font-weight: normal;
     font-style: normal;
+}
+@mixin button($width: 220px) {
+    width: 220px;
+    height: 47px;
+    background: #e6a859;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 * {
@@ -116,7 +125,7 @@ $titleColor: #534847;
     }
 }
 .section-2 {
-    margin: 160px 0;
+    margin-top: 160px;
     display: flex;
     justify-content: space-evenly;
 
@@ -134,11 +143,10 @@ $titleColor: #534847;
     .section-2-description_items:last-child {
         color: #e4a655;
         text-align: end;
-        margin-bottom: 21px;
     }
     .circles-2 {
         position: absolute;
-        left: 20px;
+        left: 150px;
         top: 1455px;
     }
 }
@@ -157,6 +165,9 @@ $titleColor: #534847;
         margin-left: 128px;
         margin-right: 38px;
     }
+    .img2 {
+        width: 650px;
+    }
     .section-3-title {
         @include title(40px, 47px);
         margin: 47px 0;
@@ -169,13 +180,7 @@ $titleColor: #534847;
         display: flex;
     }
     .btn-learn-more {
-        width: 220px;
-        height: 47px;
-        background: #e6a859;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include button();
     }
     .background-absolute {
         position: absolute;
@@ -222,5 +227,153 @@ $titleColor: #534847;
         text-align: center;
         margin-top: 16px;
         @include headerFont(normal, #8d8180);
+    }
+}
+.section-5 {
+    .section-5-title {
+        @include title(30px, 35px);
+        @include flex();
+        margin-top: 70px;
+    }
+    .section-5-images {
+        display: flex;
+        justify-content: center;
+    }
+    .img-block {
+        margin-right: 40px;
+        position: relative;
+    }
+    .img-block img {
+        width: 300px;
+        height: 340px;
+        margin: 40px 0;
+    }
+    .buttin-white {
+        @include flex();
+        position: absolute;
+        width: 149px;
+        height: 55px;
+        left: 0;
+        bottom: 40px;
+        background: #f9f9f9;
+    }
+}
+.section-6 {
+    @include flex();
+    // padding: 60px 0;
+    flex-direction: column;
+    position: relative;
+    padding: 60px 0;
+    .sec-6-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        margin: 40px 0;
+    }
+    .section-6-title {
+        @include title(36px, 30px);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .yellow-text {
+        @include readmore(16px);
+    }
+    .desc {
+        @include headerFont(normal, #8d8180);
+    }
+
+    .section-6-img .img-6 {
+        text-align: center;
+    }
+    .background-absolute6 {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: -1;
+        width: 1198.09px;
+        height: 662px;
+    }
+    .circles-6 {
+        position: absolute;
+        right: 10px;
+        bottom: 340px;
+        z-index: -1;
+    }
+}
+.footer {
+    width: 100%;
+    background: #282322;
+    color: white;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-top_items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .items-title {
+        @include headerFont(600, white);
+    }
+
+    .items-description {
+        @include headerFont($color: white);
+        text-align: start;
+    }
+    .items-auth {
+        button {
+            @include button(289px);
+            width: 289px;
+            height: 47px;
+            border: none;
+        }
+        input {
+            width: 289px;
+            border: none;
+            height: 47px;
+            color: #534847;
+            background: white;
+            text-align: center;
+        }
+        .auth-text {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .auth-items {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-bottom_center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .center-bottom {
+        margin-top: 25px;
+        display: flex;
+    }
+    .items-auth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .center-bottom_items {
+        display: flex;
+        flex-direction: column;
+        font-style: 20px;
+        margin-right: 45px;
+        color: rgba(255, 255, 255, 0.6);
     }
 }
