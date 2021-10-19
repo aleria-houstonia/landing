@@ -387,6 +387,16 @@ $titleColor: #534847;
         color: #ffffff;
         margin-bottom: 40px;
     }
+    .it-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #ffffff;
+        margin-bottom: 47px;
+    }
+
     .items-description img {
         margin-right: 10px;
     }
@@ -476,8 +486,11 @@ $titleColor: #534847;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
+
+        display: flex;
+        justify-content: space-around;
     }
-    .items-logos span {
-        margin-left: 12px;
+    .items-logos img {
+        margin-right: 20px;
     }
 }

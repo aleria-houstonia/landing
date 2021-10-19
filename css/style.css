@@ -527,6 +527,15 @@
   color: #ffffff;
   margin-bottom: 40px;
 }
+.footer .it-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 47px;
+}
 .footer .items-description img {
   margin-right: 10px;
 }
@@ -651,7 +660,12 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.footer .items-logos span {
-  margin-left: 12px;
+.footer .items-logos img {
+  margin-right: 20px;
 }
