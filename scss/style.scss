@@ -81,7 +81,7 @@ $titleColor: #534847;
         span {
             font-size: 55px;
             font-style: normal;
-            font-family: Raleway;
+            font-family: "Raleway";
             line-height: 65px;
             font-weight: bold;
             color: #e2b84c;
@@ -265,6 +265,7 @@ $titleColor: #534847;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
+        color: #8d8180;
     }
 }
 .section-5 {
@@ -480,17 +481,19 @@ $titleColor: #534847;
         color: rgba(255, 255, 255, 0.6);
     }
     .items-logos {
+        width: 200px;
         margin-bottom: 15px;
         font-family: "Poppins";
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
-    .items-logos img {
-        margin-right: 20px;
+    .logos-name {
+        width: 150px;
+        text-align: start;
     }
 }

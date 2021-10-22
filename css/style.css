@@ -70,7 +70,7 @@
 .section-1 .section-1-title span {
   font-size: 55px;
   font-style: normal;
-  font-family: Raleway;
+  font-family: "Raleway";
   line-height: 65px;
   font-weight: bold;
   color: #e2b84c;
@@ -341,6 +341,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  color: #8d8180;
 }
 
 .section-5 {
@@ -654,6 +655,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .items-logos {
+  width: 200px;
   margin-bottom: 15px;
   font-family: "Poppins";
   font-style: normal;
@@ -663,9 +665,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.footer .items-logos img {
-  margin-right: 20px;
+.footer .logos-name {
+  width: 150px;
+  text-align: start;
 }
